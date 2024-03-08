@@ -8,6 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisyUI cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- font Awesome icons links-->
+    <script src="https://kit.fontawesome.com/62f7da632f.js" crossorigin="anonymous"></script>
     <!-- google font-family link -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- custom css google fonts -->
@@ -17,14 +19,17 @@
         }
     </style>
 </head>
-<body>
+<body class="fontFamily">
     <!-- header section here -->
-    <header class="lg:w-[90rem] mx-auto">
+    <header class="lg:w-[90rem] mx-auto lg:my-[1rem]">
+        <!-- navbar here -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
                 </div>
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                   <li><a>Home</a></li>
@@ -33,20 +38,43 @@
                   <li><a>About</a></li>
                 </ul>
               </div>
-              <a class="lg:text-4xl text-2xl">Hockey<span>’</span>s</a>
+              <a class="lg:text-4xl text-xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
             </div>
 
             <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-                <li><a>About</a></li>
+              <ul class="menu menu-horizontal px-1 items-center">
+                <li><a class="text-base text-[#FF4240] font-bold ">Home</a></li>
+                <li><a class="text-base font-normal text-[#424247]">Pages</a></li>
+                <li><a class="text-base font-normal text-[#424247]">Blog</a></li>
+                <li><a class="text-base font-normal text-[#424247]">About</a></li>
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn">Button</a>
+                <div class="flex gap-6 items-center">
+                    <div class="invisible lg:visible "><a class="" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                    
+                    <a class="btn rounded font-bold lg:text-xl  text-white bg-[#FF4240]">Get Ticket</a>
+                </div>
             </div>
+          </div>
+          <!-- banner section here -->
+          <div class="lg:my-14 my-4">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="images/banner.png" class="w-full rounded-2xl" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="images/banner2.jpg"class="w-full rounded-2xl" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+              </div>
           </div>
     </header>
     <!-- main section here -->
