@@ -1,129 +1,232 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="cupcake">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hockeys</title>
     <!-- tailwindCss cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisyUI cdn link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- font Awesome icons links-->
-    <script src="https://kit.fontawesome.com/62f7da632f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/62f7da632f.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- google font-family link -->
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- custom css google fonts -->
     <style>
-        .fontFamily{
-            font-family: "Manrope", sans-serif;
-        }
+      .fontFamily {
+        font-family: "Manrope", sans-serif;
+      }
     </style>
-</head>
-<body class="fontFamily">
+  </head>
+  <body class="fontFamily">
     <!-- header section here -->
     <header class="lg:w-[90rem] mx-auto lg:my-[1rem]">
-        <!-- navbar here -->
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-                </svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>About</a></li>
-                </ul>
-              </div>
-              <a class="lg:text-4xl text-xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+      <!-- navbar here -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+          <a class="lg:text-4xl text-xl font-extrabold"
+            >Hockey<span class="text-[#FF4240]">’</span>s</a
+          >
+        </div>
+
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 items-center">
+            <li><a class="text-base text-[#FF4240] font-bold">Home</a></li>
+            <li><a class="text-base font-normal text-[#424247]">Pages</a></li>
+            <li><a class="text-base font-normal text-[#424247]">Blog</a></li>
+            <li><a class="text-base font-normal text-[#424247]">About</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="flex gap-6 items-center">
+            <div class="invisible lg:visible">
+              <a class="" href="#"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
             </div>
 
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 items-center">
-                <li><a class="text-base text-[#FF4240] font-bold ">Home</a></li>
-                <li><a class="text-base font-normal text-[#424247]">Pages</a></li>
-                <li><a class="text-base font-normal text-[#424247]">Blog</a></li>
-                <li><a class="text-base font-normal text-[#424247]">About</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-                <div class="flex gap-6 items-center">
-                    <div class="invisible lg:visible "><a class="" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
-                    
-                    <a class="btn rounded font-bold lg:text-xl  text-white bg-[#FF4240]">Get Ticket</a>
-                </div>
+            <a class="btn rounded font-bold lg:text-xl text-white bg-[#FF4240]"
+              >Get Ticket</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- banner section here -->
+      <div class="lg:my-14 my-4">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/banner.png" class="w-full rounded-2xl" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div>
-          <!-- banner section here -->
-          <div class="lg:my-14 my-4">
-            <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="images/banner.png" class="w-full rounded-2xl" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="images/banner2.jpg"class="w-full rounded-2xl" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-              </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/banner2.jpg" class="w-full rounded-2xl" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
           </div>
+        </div>
+      </div>
     </header>
     <!-- main section here -->
     <main class="lg:w-[90rem] mx-auto lg:my-[1rem]">
       <!-- section one here -->
       <section>
         <div class="">
-          <h1 class="text-center lg:text-3xl text-xl font-extrabold ">Professional Hockeys Club</h1>
-          <p class="lg:w-[37.938rem] w-[18.25rem] lg:my-[2rem] my-[1rem]  mx-auto text-center lg:text-base text-sm font-medium leading-26">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          <h1 class="text-center lg:text-3xl text-xl font-extrabold">
+            Professional Hockeys Club
+          </h1>
+          <p
+            class="lg:w-[37.938rem] w-[18.25rem] lg:my-[2rem] my-[1rem] mx-auto text-center lg:text-base text-sm font-medium leading-26"
+          >
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
         </div>
         <!-- percentage circle -->
         <div class="lg:flex lg:justify-evenly lg:items-center text-center">
           <div class="">
-            <div class="radial-progress text-[#FF4240]" style="--value:87; --size:7.5rem" role="progressbar"><span class="text-black text-2xl">87%</span></div>
+            <div
+              class="radial-progress text-[#FF4240]"
+              style="--value: 87; --size: 7.5rem"
+              role="progressbar"
+            >
+              <span class="text-black text-2xl">87%</span>
+            </div>
             <h1 class="my-[0.8rem] text-xl font-semibold">Prayer Facility</h1>
-            <p class="w-[15.625rem] mx-auto text-center text-base font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            <p class="w-[15.625rem] mx-auto text-center text-base font-normal">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
           </div>
           <div class="my-[3rem]">
-            <div class="radial-progress text-[#49D293]" style="--value:95; --size:7.5rem" role="progressbar"><span class="text-black text-2xl">95%</span></div>
+            <div
+              class="radial-progress text-[#49D293]"
+              style="--value: 95; --size: 7.5rem"
+              role="progressbar"
+            >
+              <span class="text-black text-2xl">95%</span>
+            </div>
             <h1 class="my-[0.8rem] text-xl font-semibold">Prayer Facility</h1>
-            <p class="w-[15.625rem] mx-auto text-center text-base font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            <p class="w-[15.625rem] mx-auto text-center text-base font-normal">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
           </div>
           <div class="">
-            <div class="radial-progress text-[#FFB546]" style="--value:90; --size:7.5rem" role="progressbar"><span class="text-black text-2xl">90%</span></div>
+            <div
+              class="radial-progress text-[#FFB546]"
+              style="--value: 90; --size: 7.5rem"
+              role="progressbar"
+            >
+              <span class="text-black text-2xl">90%</span>
+            </div>
             <h1 class="my-[0.8rem] text-xl font-semibold">Prayer Facility</h1>
-            <p class="w-[15.625rem] mx-auto text-center text-base font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            <p class="w-[15.625rem] mx-auto text-center text-base font-normal">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
           </div>
           <div class="my-[3rem]">
-            <div class="radial-progress text-[#4C8DF1]" style="--value:80; --size:7.5rem" role="progressbar"><span class="text-black text-2xl">80%</span></div>
+            <div
+              class="radial-progress text-[#4C8DF1]"
+              style="--value: 80; --size: 7.5rem"
+              role="progressbar"
+            >
+              <span class="text-black text-2xl">80%</span>
+            </div>
             <h1 class="my-[0.8rem] text-xl font-semibold">Prayer Facility</h1>
-            <p class="w-[15.625rem] mx-auto text-center text-base font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            <p class="w-[15.625rem] mx-auto text-center text-base font-normal">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
           </div>
         </div>
       </section>
       <!-- section two here -->
       <section>
         <div class="lg:my-[5rem]">
-          <h1 class="text-center lg:text-3xl text-xl font-extrabold ">Professional Hockeys Club</h1>
-          <p class="lg:w-[37.938rem] w-[18.25rem] lg:my-[2rem] my-[1rem]  mx-auto text-center lg:text-base text-sm font-medium leading-26">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          <h1 class="text-center lg:text-3xl text-xl font-extrabold">
+            Program Sections
+          </h1>
+          <p
+            class="lg:w-[37.938rem] w-[18.25rem] lg:my-[2rem] my-[1rem] mx-auto text-center lg:text-base text-sm font-medium leading-26"
+          >
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
         </div>
         <!-- Program Sections -->
-       <div>
-          
-       </div>
+        <div>
+          <div class="grid grid-cols-12 gap-4 justify-center">
+            <!-- Column -->
+            <div
+              class="col-span-12 lg:col-span-6 rounded-2xl bg-cover bg-center bg-no-repeat lg:h-[338px] lg:w-full h-[220px] w-11/12 mx-auto"
+              style="background-image: linear-gradient(200deg, #070211b4 0%, rgba(7, 2, 17, 0.414) 100%),
+              url('./images/hocyball.png')"
+            ></div>
+
+            <!-- Column -->
+            <div
+              class="col-span-12 lg:col-span-6 rounded-2xl bg-cover bg-center bg-no-repeat lg:h-[338px] lg:w-full h-[220px] w-11/12 mx-auto"
+              style="background-image: linear-gradient(200deg, #070211b4 0%, rgba(7, 2, 17, 0.414) 100%),
+              url('./images/hockyfild.png')"
+            ></div>
+
+            <!-- Column -->
+            <div
+              class="col-span-12 lg:col-span-12 rounded-2xl bg-cover bg-center bg-no-repeat lg:h-[450px] lg:w-full h-[220px] w-11/12 mx-auto"
+              style="background-image: linear-gradient(200deg, #070211b4 0%, rgba(7, 2, 17, 0.414) 100%),
+              url('./images/big12.png')"
+            >
+              <h1>hello</h1>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <!-- footer section here -->
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
